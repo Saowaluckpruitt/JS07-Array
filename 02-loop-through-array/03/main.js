@@ -5,8 +5,6 @@ const sales = [
 ];
 
 let summary = [];
-const summary = sale;
-
-if (discount === 0) {
-  netPrice = price;
+for (let el of sale) {
+  summary[summary.length] = { netPrice: el.sale * (1 - (el.discount || 0)) };
 }
