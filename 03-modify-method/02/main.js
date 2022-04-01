@@ -4,6 +4,5 @@ arr.push(function () {
   alert(this);
 });
 
-arr[2](); // *a,b function () {
-    alert(this);
-  });
+arr[2](); // *function() {
+//alert(this); a,b
