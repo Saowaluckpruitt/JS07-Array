@@ -1,6 +1,2 @@
-const checkEmptyObj = (obj) => {
-  if (obj === null || obj === {}) {
-    return true;
-  }
-  return false;
-};
+const checkEmptyObj = (obj) => Object.keys(obj).length === 0;
+console.log(checkEmptyObj({}));
