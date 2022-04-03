@@ -1,1 +1,1 @@
-const friends = ["Not", "Nang", "King", "Neung", "Gun"];
+const myFriends = ["Knot", "Khing", "Neung", "Gun", "Rose"];

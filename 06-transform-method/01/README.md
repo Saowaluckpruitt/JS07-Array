@@ -2,30 +2,48 @@
 
 ```js
 const array = [1, 2, 30, 400];
+array.map((el) =>el*2)
 // result: [2, 4, 60, 800]
 
 const array = [1, 2, 3, 4];
+array.map((el) => `${el}`)
 // result: ["1", "2", "3", "4"]
 
 const array = [1, '1', 2, {}];
+const sliceArr = array.slice(",")
+array.map((el) => typeof(sliceArr))
 // result: ["number", "string", "number", "object"]
 
 const array = ['apple', 'banana', 'orange'];
+array.map((el)  => el.toUpperCase())
 // result: ["APPLE", "BANANA", "ORANGE"]
 
 const array = [1, 3, 4, 5, 6, 7, 8];
+array.map((el)=>{
+ if(array%2 === 0){
+   return "even"
+ }else {
+  return "odd"
+ }
+})
 // result: ["odd", "odd", "even", "odd", "even", "odd", "even"]
 
 const array = [1, -3, 2, 8, -4, 5];
+
 // result: [1, 3, 2, 8, 4, 5]
 
+
 const array = [100, 200.25, 300.84, 400.3];
+array.map((el) =>  `${el}`)
 // result: ["100.00", "200.25", "300.84", "400.30"]
 
 const array = [0, 5, 10, 7, 6, 5, 0];
+
 // result: ["Jan", "Jun", "Nov", "Aug", "Jul", "Jun", "Jan"]
 
 const array = [1, 16, 81, 256, 625, 1296];
+
+array.map((el) => )
 // result: [1, 2, 3, 4, 5, 6]
 
 const array = [
@@ -33,6 +51,9 @@ const array = [
   { name: 'banana', age: 18 },
   { name: 'watermelon', age: 32 }
 ];
+
+array.map((el)=> Object.values(array.name))
+
 // result: ["apple", "banana", "watermelon"]
 
 const array = [
@@ -40,6 +61,7 @@ const array = [
   { name: 'banana', age: 18 },
   { name: 'watermelon', age: 32 }
 ];
+array.map((el)=> Object.values(array.age))
 // result: [14, 18, 32]
 
 const array = [
